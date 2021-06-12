@@ -57,7 +57,8 @@ void BuildMySeg(vector<ll>& arr,vector<ll>& seg,ll start,ll end,ll treenode){
 }
 
 void UpdateMySeg(vector<ll>& arr,vector<ll>& seg,ll start,ll end,ll treenode,ll idx,ll value){
-
+    
+    //Always the leaf nodes only get updated
     if(start==end){
         arr[idx] = value;
         seg[treenode] = value;
