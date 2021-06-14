@@ -42,6 +42,7 @@ void addEdge(vector<ll> adj[],ll u,ll v){
     adj[v].pb(u);
 }
 
+//BFS follows the shortest path concept
 void BFS(vector<ll> adj[],int v,int s){
 
     vector<bool> visited(v+1,false);
