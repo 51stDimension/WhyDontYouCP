@@ -41,7 +41,7 @@ int p[N];
 /*
     Egg Dropping Puzzle
 
-    Count the trials needed to get the threshold floor
+    Count the minimum number of trials needed to get the threshold floor
 
     Let res(f,e) be the minimum trials in the worst case
     for f floors and e eggs
