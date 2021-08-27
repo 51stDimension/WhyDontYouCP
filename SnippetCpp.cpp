@@ -56,6 +56,34 @@ typedef long long ll;
 template <typename T>
 using ordered_set = tree<T, null_type, greater_equal<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
+void __print(int x) {cerr << x;}
+void __print(long x) {cerr << x;}
+void __print(long long x) {cerr << x;}
+void __print(unsigned x) {cerr << x;}
+void __print(unsigned long x) {cerr << x;}
+void __print(unsigned long long x) {cerr << x;}
+void __print(float x) {cerr << x;}
+void __print(double x) {cerr << x;}
+void __print(long double x) {cerr << x;}
+void __print(char x) {cerr << '\'' << x << '\'';}
+void __print(const char *x) {cerr << '\"' << x << '\"';}
+void __print(const string &x) {cerr << '\"' << x << '\"';}
+void __print(bool x) {cerr << (x ? "true" : "false");}
+
+template<typename T, typename V>
+void __print(const pair<T, V> &x) {cerr << '{'; __print(x.first); cerr << ','; __print(x.second); cerr << '}';}
+template<typename T>
+void __print(const T &x) {int f = 0; cerr << '{'; for (auto &i: x) cerr << (f++ ? "," : ""), __print(i); cerr << "}";}
+void _print() {cerr << "]\n";}
+template <typename T, typename... V>
+void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v...);}
+
+#ifndef ONLINE_JUDGE
+#define debug(x...) cerr << "[" << #x << "] = ["; _print(x)
+#else
+#define debug(x...)
+#endif
+
 const int N=2e5+5;
 const long long infll = 0x3f3f3f3f3f3f3f3fLL;
 int p[N];
@@ -167,7 +195,7 @@ Try Thinking Brute Force alongwith PigeonHole(Hard to observe)
 Whenever you get a constructive problem. Try solving for n=2,n=3,n=4 and then start generalizing till n=6
 */
 void solve(ll tc){
-        
+    
 }
 
 int main() {
@@ -175,6 +203,9 @@ int main() {
     FIO;
     //seiveFill();
     //factorialFill();
+    #ifndef ONLINE_JUDGE
+        freopen("outputf.in", "w", stderr);
+    #endif
     ll tt;
     cin>>tt;
     for(ll i=1;i<=tt;i++){
