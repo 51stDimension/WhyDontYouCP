@@ -195,7 +195,7 @@ Try Thinking Brute Force alongwith PigeonHole(Hard to observe)
 Whenever you get a constructive problem. Try solving for n=2,n=3,n=4 and then start generalizing till n=6
 */
 void solve(ll tc){
-    
+        
 }
 
 int main() {
@@ -204,7 +204,7 @@ int main() {
     //seiveFill();
     //factorialFill();
     #ifndef ONLINE_JUDGE
-        freopen("outputf.in", "w", stderr);
+        freopen("debug.txt", "w", stderr);
     #endif
     ll tt;
     cin>>tt;
