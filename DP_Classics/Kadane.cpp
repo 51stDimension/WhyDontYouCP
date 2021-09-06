@@ -53,6 +53,7 @@ ll maxSum(vector<ll>& arr,ll n){
 
     for(ll i=1;i<n;i++){
         dp[i] = dp[i-1] + arr[i];
+        //For Space optimized version just keep two different variables instead of whole dp array as the value of dp[i] depends only on dp[i-1]
         if(dp[i]<0){
             dp[i] = 0;
         }
