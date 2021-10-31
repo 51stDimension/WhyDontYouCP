@@ -1,7 +1,8 @@
 ll getPar(ll x,vector<ll>& par){
 
     if(par[x]==x) return x;
-
+    
+    //Path compression optimisation
     par[x] = getPar(par[x],par);
 
     return par[x];
